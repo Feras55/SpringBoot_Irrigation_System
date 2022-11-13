@@ -67,7 +67,7 @@ public class LandPlotServiceImpl implements LandPlotService {
         sensorService.irrigateCallToSensor(landPlotRetrieved, waterPerFeddan);
 
         //update the landplot with the new timeslot
-        landPlotRetrieved.setTimeSlot(LocalTime.now().plusMinutes(minutesPerFeddan));
+        landPlotRetrieved.setTimeSlot(landPlotRetrieved.getTimeSlot().plusMinutes(minutesPerFeddan));
         return createorUpdateLandPlot(landPlotRetrieved);
     }
 

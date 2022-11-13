@@ -14,7 +14,7 @@
     <artifactId>irrigationsystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>irrigationsystem</name>
-    <description>irrigationsystem</description>
+    <description>Demo Project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
         <testcontainers.version>1.17.4</testcontainers.version>
@@ -52,14 +52,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.retry</groupId>
-            <artifactId>spring-retry</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
         </dependency>
     </dependencies>
     <build>

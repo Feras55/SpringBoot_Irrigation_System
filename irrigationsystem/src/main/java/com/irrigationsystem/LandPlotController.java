@@ -13,7 +13,7 @@ import java.util.List;
 
 
 @RestController()
-@RequestMapping("/api/land_plots")
+@RequestMapping("/api/landPlot")
 public class LandPlotController {
 
     private LandPlotService landPlotService;
@@ -23,11 +23,6 @@ public class LandPlotController {
     @Autowired
     public void setLandPlotService(LandPlotService landPlotService) {
         this.landPlotService = landPlotService;
-    }
-
-    @GetMapping("/")
-    public String sayHello() {
-        return "Hello World! Time on server is " + LocalDateTime.now();
     }
 
     @PostMapping
